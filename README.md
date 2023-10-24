@@ -1,4 +1,5 @@
 # PhilosophyWebsite
+https://filipsegota.github.io/PhilosophyWebsite/
 ## Description
 I created this website to be my philosophy portfolio (since I also have a degree in Philosophy😊). I started it as a project for the web programming course I took, but I knew I would want to keep it for the future. It includes HTML, CSS, JavaScript, and PHP (Not a lot of JS and PHP). Here are some of the components of the website:
   - 5 main HTML pages:
