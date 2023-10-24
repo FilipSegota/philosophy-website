@@ -1,0 +1,101 @@
+<!--
+    Author: Filip Segota
+    Class: CSC261, Fall 2023
+    Assignment: HTML Assignment
+    File: references.html
+-->
+<!--Document declaration-->
+<!DOCTYPE html>
+<!--Language declaration-->
+<html lang="en">
+
+<!--Metadata-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>References</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Adding JavaScript file-->
+    <script src="myScript.js"></script>
+</head>
+
+<!--Body of a page-->
+
+<body>
+    <!--Grid layout-->
+    <div class="grid-container">
+        <!--Header including page title-->
+        <header>
+            <h1 class="header-title">References</h1>
+        </header>
+
+        <!--Navigation menu using unordered list-->
+        <nav>
+            <ul class="menu-list">
+                <li class="menu-list-item"><a href="index.html">
+                        <h2 class="menu-title">Home</h2>
+                    </a></li>
+                <li class="menu-list-item menu-list-item-works">
+                    <div class="menu-link-dropdown">
+                        <a>
+                            <h2 class="menu-title">Works<span class="menu-title-arrow">&#9660</span></h2>
+                        </a>
+                    </div>
+                    <!--Dropdown menu for Works tab using ordered list-->
+                    <!--CHANGE TITLES AND LINKS-->
+                    <ol class="menu-list-item-dropdown">
+                        <li><a href="works.html">
+                                <h3 class="menu-subtitle">Philosophy 1</h3>
+                            </a></li>
+                        <li><a href="">
+                                <h3 class="menu-subtitle">Philosophy 2</h3>
+                            </a></li>
+                        <li><a href="">
+                                <h3 class="menu-subtitle">Philosophy 3</h3>
+                            </a></li>
+                        <li><a href="">
+                                <h3 class="menu-subtitle">Philosophy 4</h3>
+                            </a></li>
+                        <li><a href="">
+                                <h3 class="menu-subtitle">Philosophy 5</h3>
+                            </a></li>
+                        <li><a href="">
+                                <h3 class="menu-subtitle">Philosophy 6</h3>
+                            </a></li>
+                        <li><a href="">
+                                <h3 class="menu-subtitle">Philosophy 7</h3>
+                            </a></li>
+                        <li><a href="">
+                                <h3 class="menu-subtitle">Philosophy 8</h3>
+                            </a></li>
+                    </ol>
+                </li>
+                <!--Active class is for the current tab-->
+                <li class="menu-list-item menu-link-active">
+                    <h2 class="menu-title">References</h2>
+                </li>
+                <li class="menu-list-item"><a href="aboutme.html">
+                        <h2 class="menu-title">About Me</h2>
+                    </a></li>
+                <li class="menu-list-item"><a href="contactme.html">
+                        <h2 class="menu-title">Contact Me</h2>
+                    </a></li>
+            </ul>
+        </nav>
+
+        <!--Main section of the page. Add later-->
+        <main>
+
+        </main>
+
+        <!--Footer section-->
+        <footer>
+            <!--Call JS function to show time-->
+            <div class="footer-time"></div>
+            <div class="footer-name">Filip Segota 2023</div>
+        </footer>
+    </div>
+</body>
+
+</html>

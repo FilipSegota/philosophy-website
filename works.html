@@ -1,0 +1,163 @@
+<!--
+    Author: Filip Segota
+    Class: CSC261, Fall 2023
+    Assignment: HTML Assignment
+    File: works.html
+-->
+<!--Document declaration-->
+<!DOCTYPE html>
+<!--Language declaration-->
+<html lang="en">
+
+<!--Metadata-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Works</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Adding JavaScript file-->
+    <script src="myScript.js"></script>
+</head>
+
+<!--Body of a page-->
+
+<body>
+    <!--Grid layout-->
+    <div class="grid-container">
+        <!--Header including page title-->
+        <header>
+            <h1 class="header-title">Works</h1>
+        </header>
+
+        <!--Navigation menu using unordered list-->
+        <nav>
+            <ul class="menu-list">
+                <li class="menu-list-item"><a href="index.html">
+                        <h2 class="menu-title">Home</h2>
+                    </a></li>
+                <li class="menu-list-item menu-list-item-works">
+                    <!--Active class is for the current tab-->
+                    <div class="menu-link-dropdown menu-link-dropdown-active">
+                        <a>
+                            <h2 class="menu-title">Works<span class="menu-title-arrow">&#9660</span></h2>
+                        </a>
+                    </div>
+                </li>
+                <li class="menu-list-item"><a href="references.html">
+                        <h2 class="menu-title">References</h2>
+                    </a></li>
+                <li class="menu-list-item"><a href="aboutme.html">
+                        <h2 class="menu-title">About Me</h2>
+                    </a></li>
+                <li class="menu-list-item"><a href="contactme.html">
+                        <h2 class="menu-title">Contact Me</h2>
+                    </a></li>
+            </ul>
+            <!--Dropdown menu created into menu bar for Works page-->
+            <!--CHANGE TITLES-->
+            <!--CREATE PAGES FOR OTHER TITLES AND CHANGE LINKS. ALL THE OTHER LINKS ARE EMPTY RIGHT NOW-->
+            <ul class="menu-works">
+                <li class="menu-list-item-dropdown-active"><a href="works.html">
+                        <h3 class="menu-subtitle">Philosophy 1</h3>
+                    </a></li>
+                <li><a href="">
+                        <h3 class="menu-subtitle">Philosophy 2</h3>
+                    </a></li>
+                <li><a href="">
+                        <h3 class="menu-subtitle">Philosophy 3</h3>
+                    </a></li>
+                <li><a href="">
+                        <h3 class="menu-subtitle">Philosophy 4</h3>
+                    </a></li>
+                <li><a href="">
+                        <h3 class="menu-subtitle">Philosophy 5</h3>
+                    </a></li>
+                <li><a href="">
+                        <h3 class="menu-subtitle">Philosophy 6</h3>
+                    </a></li>
+                <li><a href="">
+                        <h3 class="menu-subtitle">Philosophy 7</h3>
+                    </a></li>
+                <li><a href="">
+                        <h3 class="menu-subtitle">Philosophy 8</h3>
+                    </a></li>
+            </ul>
+        </nav>
+
+        <!--Main section of the page-->
+        <main>
+            <!--Call JS function for search-->
+            <!--CHANGE STYLE OF THE CARDS WHEN SEARCHING. LIMIT THE SIZE-->
+            <input type="text" id="searchBox" onkeyup="searchFunction()" placeholder="Search..">
+            <!--Add JavaScript to connect to Contact Me Form and show works-->
+            <!--CONNECT WORKS TO CONTACT ME FORM-->
+            <!--CHANGE ALL THE CONTENT OF THE CARDS-->
+            <!--IMPROVE STYLE OF THE CARDS-->
+            <div class="main-cards">
+                <!--Individual card class and content inside of it. Change later-->
+                <article class="card">
+                    <img src="pictures/sample.jpg" alt="sample" class="card-img">
+                    <h4 class="card-title"><b>Work 1</b></h4>
+                    <p class="card-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam esse iure
+                        dolores
+                        qui,
+                    </p>
+                </article>
+                <!--Individual card class and content inside of it. Change later-->
+                <article class="card">
+                    <img src="pictures/sample.jpg" alt="sample" class="card-img">
+                    <h4 class="card-title"><b>Work 2</b></h4>
+                    <p class="card-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam esse iure
+                        dolores
+                        qui, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam esse iure
+                        dolores
+                        qui,Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam esse iure
+                        dolores
+                        qui,Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam esse iure
+                        dolores
+                        qui,Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam esse iure
+                        dolores
+                        qui,
+                    </p>
+                </article>
+                <!--Individual card class and content inside of it. Change later-->
+                <article class="card">
+                    <img src="pictures/sample.jpg" alt="sample" class="card-img">
+                    <h4 class="card-title"><b>Work 3</b></h4>
+                    <p class="card-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam esse iure
+                        dolores
+                        qui,
+                    </p>
+                </article>
+                <!--Individual card class and content inside of it. Change later-->
+                <article class="card">
+                    <img src="pictures/sample.jpg" alt="sample" class="card-img">
+                    <h4 class="card-title"><b>Work 4</b></h4>
+                    <p class="card-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam esse iure
+                        dolores
+                        qui,
+                    </p>
+                </article>
+                <!--Individual card class and content inside of it. Change later-->
+                <article class="card">
+                    <img src="pictures/sample.jpg" alt="sample" class="card-img">
+                    <h4 class="card-title"><b>Work 5</b></h4>
+                    <p class="card-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam esse iure
+                        dolores
+                        qui,
+                    </p>
+                </article>
+            </div>
+        </main>
+
+        <!--Footer section-->
+        <footer>
+            <!--Call JS function to show time-->
+            <div class="footer-time"></div>
+            <div class="footer-name">Filip Segota 2023</div>
+        </footer>
+    </div>
+</body>
+
+</html>

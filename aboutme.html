@@ -1,0 +1,146 @@
+<!--
+    Author: Filip Segota
+    Class: CSC261, Fall 2023
+    Assignment: HTML Assignment
+    File: aboutme.html
+-->
+<!--Document declaration-->
+<!DOCTYPE html>
+<!--Language declaration-->
+<html lang="en">
+
+<!--Metadata-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Adding JavaScript file-->
+    <script src="myScript.js"></script>
+</head>
+
+<!--Body of a page-->
+
+<body>
+    <!--Grid layout-->
+    <div class="grid-container">
+        <!--Header including page title-->
+        <header>
+            <h1 class="header-title">About Me</h1>
+        </header>
+
+        <!--Navigation menu using unordered list-->
+        <nav>
+            <ul class="menu-list">
+                <li class="menu-list-item"><a href="index.html">
+                        <h2 class="menu-title">Home</h2>
+                    </a></li>
+                <li class="menu-list-item menu-list-item-works">
+                    <div class="menu-link-dropdown">
+                        <a>
+                            <h2 class="menu-title">Works<span class="menu-title-arrow">&#9660</span></h2>
+                        </a>
+                    </div>
+                    <!--Dropdown menu for Works tab using ordered list-->
+                    <!--CHANGE TITLES AND LINKS-->
+                    <ol class="menu-list-item-dropdown">
+                        <li><a href="works.html">
+                                <h3 class="menu-subtitle">Philosophy 1</h3>
+                            </a></li>
+                        <li><a href="">
+                                <h3 class="menu-subtitle">Philosophy 2</h3>
+                            </a></li>
+                        <li><a href="">
+                                <h3 class="menu-subtitle">Philosophy 3</h3>
+                            </a></li>
+                        <li><a href="">
+                                <h3 class="menu-subtitle">Philosophy 4</h3>
+                            </a></li>
+                        <li><a href="">
+                                <h3 class="menu-subtitle">Philosophy 5</h3>
+                            </a></li>
+                        <li><a href="">
+                                <h3 class="menu-subtitle">Philosophy 6</h3>
+                            </a></li>
+                        <li><a href="">
+                                <h3 class="menu-subtitle">Philosophy 7</h3>
+                            </a></li>
+                        <li><a href="">
+                                <h3 class="menu-subtitle">Philosophy 8</h3>
+                            </a></li>
+                    </ol>
+                </li>
+                <li class="menu-list-item"><a href="references.html">
+                        <h2 class="menu-title">References</h2>
+                    </a></li>
+                <!--Active class is for the current tab-->
+                <li class="menu-list-item menu-link-active">
+                    <h2 class="menu-title">About Me</h2>
+                </li>
+                <li class="menu-list-item"><a href="contactme.html">
+                        <h2 class="menu-title">Contact Me</h2>
+                    </a></li>
+            </ul>
+        </nav>
+
+        <!--Main section of the page-->
+        <main>
+            <div class="about-main">
+                <!--Table for info about me-->
+                <table class="about-main-table">
+                    <caption>About Me</caption>
+                    <tr>
+                        <th>First Name:</th>
+                        <td>Filip</td>
+                        <!--Picture column taking 3 rows-->
+                        <td rowspan="3" class="table-image-col"><img src="pictures/sample.jpg" alt="sample"
+                                class="about-main-table-img"></td>
+                    </tr>
+                    <tr>
+                        <th>Last Name:</th>
+                        <td>Segota</td>
+                    </tr>
+                    <tr>
+                        <th>E-mail:</th>
+                        <td>segota.filip@gmail.com</td>
+                    </tr>
+                    <!--Two rows for my story taking 3 columns-->
+                    <tr>
+                        <th colspan="3" class="table-story-col">My Story:</th>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="table-story-col">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Explicabo consectetur
+                            animi, minus ipsum ullam iusto illo assumenda doloremque possimus laboriosam soluta itaque
+                            perspiciatis repellendus in dolore magnam dolorum. Iure fugit sequi perferendis ullam error
+                            illum dolore minima praesentium in mollitia, commodi eius architecto, velit, vero
+                            exercitationem ut ipsam. Dolore earum quis nesciunt sunt debitis eveniet, repudiandae
+                            cupiditate et saepe esse possimus magni provident nulla eius itaque, asperiores fuga iure
+                            recusandae accusantium? Natus repellendus dolorem illo delectus odio voluptates numquam
+                            dolores culpa, veniam quasi rerum illum placeat voluptas deleniti quam voluptatem facilis.
+                            Placeat incidunt rem recusandae, quis dolorem animi, sint officia dicta sapiente qui, velit
+                            temporibus voluptate nemo quaerat iure. Adipisci fugit, corrupti, inventore expedita impedit
+                            sint quia non cum voluptatum ipsa at corporis quos, fuga beatae. Cupiditate delectus iure
+                            amet repellendus incidunt dolorem obcaecati non id? Deserunt minima maxime officia placeat
+                            quia, qui doloremque corporis suscipit necessitatibus ad velit ut ipsum blanditiis quibusdam
+                            iusto quidem quos! Quibusdam aperiam eligendi cumque fugiat, culpa blanditiis doloremque
+                            repellendus architecto pariatur rerum doloribus libero quidem, error ea iste iusto atque
+                            quas at sed natus, enim necessitatibus impedit expedita officia! Amet libero suscipit soluta
+                            quas perferendis asperiores ipsum. Minima expedita doloribus, tempore ullam harum nihil?
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+
+        <!--Footer section-->
+        <footer>
+            <!--Call JS function to show time-->
+            <div class="footer-time"></div>
+            <div class="footer-name">Filip Segota 2023</div>
+        </footer>
+    </div>
+</body>
+
+</html>

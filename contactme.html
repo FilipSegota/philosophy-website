@@ -1,0 +1,174 @@
+<!--
+    Author: Filip Segota
+    Class: CSC261, Fall 2023
+    Assignment: HTML Assignment
+    File: contactme.html
+-->
+<!--Document declaration-->
+<!DOCTYPE html>
+<!--Language declaration-->
+<html lang="en">
+
+<!--Metadata-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Adding JavaScript file-->
+    <script src="myScript.js"></script>
+</head>
+
+<!--Body of a page-->
+
+<body>
+    <!--Grid layout-->
+    <div class="grid-container">
+        <!--Header including page title-->
+        <header>
+            <h1 class="header-title">Contact Me</h1>
+        </header>
+
+        <!--Navigation menu using unordered list-->
+        <nav>
+            <ul class="menu-list">
+                <li class="menu-list-item"><a href="index.html">
+                        <h2 class="menu-title">Home</h2>
+                    </a></li>
+                <li class="menu-list-item menu-list-item-works">
+                    <div class="menu-link-dropdown">
+                        <a>
+                            <h2 class="menu-title">Works<span class="menu-title-arrow">&#9660</span></h2>
+                        </a>
+                    </div>
+                    <!--Dropdown menu for Works tab using ordered list-->
+                    <!--CHANGE TITLES AND LINKS-->
+                    <ol class="menu-list-item-dropdown">
+                        <li><a href="works.html">
+                                <h3 class="menu-subtitle">Philosophy 1</h3>
+                            </a></li>
+                        <li><a href="">
+                                <h3 class="menu-subtitle">Philosophy 2</h3>
+                            </a></li>
+                        <li><a href="">
+                                <h3 class="menu-subtitle">Philosophy 3</h3>
+                            </a></li>
+                        <li><a href="">
+                                <h3 class="menu-subtitle">Philosophy 4</h3>
+                            </a></li>
+                        <li><a href="">
+                                <h3 class="menu-subtitle">Philosophy 5</h3>
+                            </a></li>
+                        <li><a href="">
+                                <h3 class="menu-subtitle">Philosophy 6</h3>
+                            </a></li>
+                        <li><a href="">
+                                <h3 class="menu-subtitle">Philosophy 7</h3>
+                            </a></li>
+                        <li><a href="">
+                                <h3 class="menu-subtitle">Philosophy 8</h3>
+                            </a></li>
+                    </ol>
+                </li>
+                <li class="menu-list-item"><a href="references.html">
+                        <h2 class="menu-title">References</h2>
+                    </a></li>
+                <li class="menu-list-item"><a href="aboutme.html">
+                        <h2 class="menu-title">About Me</h2>
+                    </a></li>
+                <!--Active class is for the current tab-->
+                <li class="menu-list-item menu-link-active">
+                    <h2 class="menu-title">Contact Me</h2>
+                </li>
+            </ul>
+        </nav>
+
+        <!--Main section of the page-->
+        <main>
+            <div class="main-contact">
+                <fieldset class="main-fieldset">
+                    <legend>Contact Me:</legend>
+                    <!--Form sends information to feedback.php-->
+                    <!--Call JS function for submit-->
+                    <form id="contactForm" name="contactForm" action="feedback.php" onsubmit="return validateForm()"
+                        method="post" class="main-contact-form">
+                        <fieldset class="form-fieldset">
+                            <legend>Info:</legend>
+
+                            <label for="name">Name:</label>
+                            <!--ADD REQUIRED. REMOVED IT TO TEST JS-->
+                            <input type="text" id="name" name="name">
+
+                            <fieldset>
+                                <legend>Gender:</legend>
+
+                                <input type="radio" name="gender" id="male" value="male">
+                                <label for="male">Male</label>
+
+                                <input type="radio" name="gender" id="female" value="female">
+                                <label for="female">Female</label>
+                            </fieldset>
+
+                            <label for="email">Email:</label>
+                            <!--ADD REQUIRED. REMOVED IT TO TEST JS-->
+                            <input type="email" id="email" name="email">
+                        </fieldset>
+
+                        <!--CONNECT IT TO WORKS PAGE-->
+                        <fieldset class="form-fieldset">
+                            <legend>Works:</legend>
+
+                            <input type="checkbox" name="work[]" id="work1" value="work1">
+                            <label for="work1">Work 1</label><br>
+
+                            <input type="checkbox" name="work[]" id="work2" value="work2">
+                            <label for="work2">Work 2</label><br>
+
+                            <input type="checkbox" name="work[]" id="work3" value="work3">
+                            <label for="work3">Work 3</label><br>
+
+                            <input type="checkbox" name="work[]" id="work4" value="work4">
+                            <label for="work4">Work 4</label><br>
+
+                            <input type="checkbox" name="work[]" id="work5" value="work5">
+                            <label for="work5">Work 5</label>
+                        </fieldset>
+
+                        <fieldset class="form-fieldset">
+                            <legend>Inquiry:</legend>
+
+                            <label for="">Type of inquiry:</label>
+                            <select id="inquiry" name="inquiry" onchange="changeFunction()">
+                                <option value="Feedback">Feedback</option>
+                                <option value="Question">Question</option>
+                                <option value="Comment">Comment</option>
+                                <option value="Concern">Concern</option>
+                            </select>
+
+                            <div class="form-fieldset-label">
+                                <label for="feedback" id="inquiryTitle">Feedback:</label>
+                                <!--ADD REQUIRED. REMOVED IT TO TEST JS-->
+                                <textarea name="feedback" id="feedback" cols="30" rows="10"></textarea>
+                            </div>
+                        </fieldset>
+
+                        <input type="hidden" name="type" id="type" value="Feedback">
+
+                        <input type="submit" value="Submit" class="main-contact-form-button">
+                        <input type="reset" value="Reset" class="main-contact-form-button">
+                    </form>
+                </fieldset>
+            </div>
+        </main>
+
+        <!--Footer section-->
+        <footer>
+            <!--Call JS function to show time-->
+            <div class="footer-time"></div>
+            <div class="footer-name">Filip Segota 2023</div>
+        </footer>
+    </div>
+</body>
+
+</html>
